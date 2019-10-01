@@ -1,0 +1,46 @@
+body
+{
+    text-align: center;
+    background-color:#abbee0
+}
+Table
+{
+    border-collapse: collapse;
+    margin: 40px auto;
+    background-color : #8488de
+}
+*
+{
+    font-family: sans-serif;
+    font-style: bold;
+}
+td
+{
+    padding: 10px;
+    font-size: 20px;    
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+}
+td > a
+{
+    background-color:#0b0b62;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 18px;
+    padding: 35px 22px;
+    border-radius: 50px;
+    border: 1px dashed black;
+}                    
+button
+{
+    color: #ccc;
+    border : none;
+    background-color: #111;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 15px;
+
+}
