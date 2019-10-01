@@ -3,13 +3,13 @@
     <head>
         <title> Tic Tac Toe</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" >
-        
+
     </head>
 
     <body>
 
-        <!-- 
-            Play Agains 
+        <!--  
+            Play Agains
                 - AI
                 - Player
         -->
@@ -23,7 +23,7 @@
                     {% else %} <a href="{{ url_for('play',r=i,c=j) }} " > Play {{ turn }} </a>
                     {% endif %}
                 </td>
-            {% endfor %} 
+            {% endfor %}
             </tr>
         {% endfor %}
         </Table>
