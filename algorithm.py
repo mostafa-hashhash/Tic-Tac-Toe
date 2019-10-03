@@ -1,5 +1,5 @@
 # This Is The Algorithm
- def MiniMax():
+def MiniMax():
      pass
 
 

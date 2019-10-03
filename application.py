@@ -1,7 +1,7 @@
 from flask import Flask, render_template, session, redirect, url_for
 from flask_session import Session
 from tempfile import mkdtemp
-from algorithm import MiniMAx
+from algorithm import *
 
 app = Flask(__name__)
 
@@ -11,10 +11,12 @@ app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
 @app.route("/")
-def home(): 
+def home():
 
     if "board" not in session :
-        session["board"] = [[None,None,None],[None,None,None],[None,None,None]]
+        session["board"] = [[None,None,None],
+                            [None,None,None],
+                            [None,None,None]]
         session["turn"] = "x"
 
     return render_template("index.html",
